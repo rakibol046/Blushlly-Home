@@ -30,7 +30,7 @@ export default function Carousel({
         {slides}
       </div>
       {/* Data will be dynamic with slider image */}
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      <div className="invisible lg:visible absolute inset-0 flex items-center justify-between p-4">
         <div className="slider-content leading-9">
           <p className="montserrat underline">SKIN</p>
 
@@ -49,14 +49,14 @@ export default function Carousel({
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
           onClick={prev}
-          className="p-20 rounded-full shadow text-gray-800"
+          className="lg:p-20 p-0 rounded-full shadow text-gray-800"
         >
           {/* <leftArrow size={40} /> */}
           <img src={leftArrow} alt="" />
         </button>
         <button
           onClick={next}
-          className="p-20 rounded-full shadow text-gray-800"
+          className="lg:p-20 p-0 rounded-full shadow text-gray-800"
         >
           <img src={rightArrow} alt="" />
         </button>

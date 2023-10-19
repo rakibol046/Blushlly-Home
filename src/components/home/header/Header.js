@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 
 function Header() {
   return (
-    <div className="px-28">
+    <div className="lg:px-28 px-2 lg:mb-0 mb-3">
       <TopHeader />
-      <div className="h-px bg-gray-300"></div>
+      <div className="h-px invisible lg:visible bg-gray-300"></div>
       <Navbar />
     </div>
   );

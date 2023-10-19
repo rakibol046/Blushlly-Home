@@ -14,11 +14,11 @@ function Navbar() {
   ];
   return (
     <div className="nav-main-container py-2">
-      <div className="logo">
+      <div className="logo flex justify-center lg:justify-start">
         <img src={logo1} alt="" />
       </div>
       <nav className="">
-        <ul className="flex">
+        <ul className="lg:flex grid grid-cols-3 gap-2">
           {navItem?.map((value, i) => (
             <li key={i} className="px-3">
               {" "}
@@ -29,12 +29,16 @@ function Navbar() {
           ))}
         </ul>
       </nav>
-      <div className="search flex gap-2 justify-end">
+      {/* <div className="search lg:flex lg:visible hidden gap-2 justify-end">
         <input className="" hidden={search} type="text" placeholder="Search" />
         <span className="montserrat" hidden={!search}>
           Search
         </span>
         <img className="" src={searchImg} alt="" />
+      </div> */}
+      <div className="head-search">
+        <input type="text" placeholder="Search" />
+        <img src={searchImg} alt="icon" />
       </div>
     </div>
   );

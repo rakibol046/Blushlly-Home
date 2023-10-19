@@ -18,12 +18,12 @@ function Home() {
       <Slider />
       <Categories />
       <LatestPost />
-      <div className="ad1 px-28 py-12">
+      <div className="ad1 lg:px-28 py-12">
         <img src={ad1} alt="ad2" width="100%" />
       </div>
       <PopularPost />
       <MorbiPorttitor />
-      <div className="ad2 px-28 py-12">
+      <div className="ad2 lg:px-28 py-12">
         <img src={ad2} alt="ad2" width="100%" />
       </div>
       <RandomPost />

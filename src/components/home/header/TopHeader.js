@@ -8,7 +8,7 @@ import Linkedin from "../../../assets/Linkedin.png";
 
 function TopHeader() {
   return (
-    <div className="main-container flex justify-between items-center py-2">
+    <div className="main-container lg:flex lg:visible hidden justify-between items-center py-2">
       <div className="wellcome-msg">
         <span className="montserrat text-gray-500">Welcome There!</span>
       </div>

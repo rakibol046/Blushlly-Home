@@ -37,7 +37,7 @@ function Footer() {
 
       <section
         style={{ backgroundColor: "rgba(29, 26, 26, 1)" }}
-        className="px-28 pt-20 pb-7 text-white"
+        className="lg:px-28 px-4 pt-20 pb-7 text-white"
       >
         <div className="grid lg:grid-cols-3 lg:gap-24">
           <div className="categories">
@@ -73,7 +73,7 @@ function Footer() {
               <img src={search} alt="icon" />
             </div>
           </div>
-          <div className="popular-post">
+          <div className="popular-post lg:mt-0 mt-5">
             <p className="title uppercase mb-5">Popular Post</p>
 
             <div className="flex">
@@ -124,7 +124,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="galary">
+          <div className="galary lg:mt-0 mt-5">
             <p className="title uppercase mb-5">Galary</p>
             <div className="grid grid-cols-3 justify-start gap-5">
               <img
@@ -257,7 +257,7 @@ function Footer() {
         </div>
 
         <hr className="my-10" />
-        <div className="flex justify-between items-center">
+        <div className="lg:flex justify-between items-center">
           <img src={logo} alt="logo" />
           <ul className="flex gap-5 ">
             <li>
@@ -294,8 +294,8 @@ function Footer() {
         </div>
         <hr className="my-10" />
 
-        <div className=" flex justify-between items-center">
-          <div className="social flex pr-4">
+        <div className=" lg:flex text-center justify-between items-center">
+          <div className="social flex justify-center pr-4">
             <a className="pr-2" href="#">
               <img src={Facebook} alt="" />
             </a>

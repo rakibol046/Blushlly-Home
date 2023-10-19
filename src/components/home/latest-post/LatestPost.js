@@ -30,17 +30,17 @@ function LatestPost() {
     },
   ];
   return (
-    <div className="px-28 ">
+    <div className="lg:px-28 ">
       <HeadLine title="Latest Post" />
-      <section className="grid grid-cols-3 gap-6 py-5 ">
+      <section className="lg:grid lg:grid-cols-3 gap-6 py-5">
         {data.map((data, i) => (
           <div key={i}>
-            <div className="">
+            <div className="mb-10 lg:mt-0">
               <img src={data?.img} alt="img" width="100%" />
               <div className="flex justify-center items-center">
                 <div
                   style={{ marginTop: "-6rem", backgroundColor: "white" }}
-                  className="content w-4/5 leading-6 px-10 py-4 text-center border-2 border-gray-500 border-solid"
+                  className="content w-4/5 leading-6 lg:px-10 px-0 py-4 text-center border-2 border-gray-500 border-solid"
                 >
                   <p className="underline montserrat uppercase">{data?.head}</p>
                   <p className="text-2xl">{data?.title}</p>
@@ -59,7 +59,7 @@ function LatestPost() {
           <div className="flex justify-center items-center  ">
             <div
               style={{ marginTop: "-7.5rem", backgroundColor: "white" }}
-              className="content w-4/5  px-32 py-5 text-center border-2 border-gray-500 border-solid"
+              className="content w-4/5  lg:px-32 px-0 py-5 text-center border-2 border-gray-500 border-solid"
             >
               <p className="underline montserrat uppercase">Skin</p>
               <p className="text-3xl pt-3">

@@ -11,12 +11,14 @@ function MorbiPorttitor() {
   return (
     <div
       style={{ backgroundColor: "rgba(221, 221, 221, 1)" }}
-      className="py-12 mt-7 lg:px-80 px-3 flex"
+      className="py-12 mt-7 lg:px-80 px-3 lg:flex"
     >
-      <img className="rounded-full" src={image10} alt="img" />
+      <div className="flex justify-center w-full">
+        <img className="rounded-full" src={image10} alt="img" />
+      </div>
       <div className="pl-10 flex justify-center items-center">
         <div>
-          <p className="text-3xl">Morbi Porttitor</p>
+          <p className="text-3xl mt-4 lg:mt-0">Morbi Porttitor</p>
           <p className="montserrat pt-2">
             Onvallis porttitor ligula leo a lectus. Donec id venenatis magna.
             Vivamus placerat luctus neque nec faucibus. Aliquam Gravida eu

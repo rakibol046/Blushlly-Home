@@ -24,7 +24,7 @@ function Categories() {
     },
   ];
   return (
-    <div className="categories-container px-28 py-10 ">
+    <div className="categories-container lg:grid lg:grid-cols-5 lg:gap-5 grid grid-cols-2 gap-2 lg:px-28 px-1 py-10">
       {categories.map((cat, i) => (
         <div key={i}>
           <div className="category overflow-hidden relative">

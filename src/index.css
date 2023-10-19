@@ -1,24 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Vidaloka', serif;
+  font-family: "Vidaloka", serif;
   font-weight: 400;
 }
 body {
-   font-family: 'Quinshy', sans-serif;
+  font-family: "Quinshy", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.btn{
+.btn {
   background-color: rgba(29, 26, 26, 1);
   color: white;
   padding: 7px;

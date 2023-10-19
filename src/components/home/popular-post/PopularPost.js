@@ -31,17 +31,17 @@ function PopularPost() {
     },
   ];
   return (
-    <div className="px-28">
+    <div className="lg:px-28">
       <HeadLine title="Popular Post" />
-      <section className="grid grid-cols-3 gap-6 py-5">
+      <section className="lg:grid lg:grid-cols-3 lg:gap-6 py-5">
         {data.map((data, i) => (
           <div key={i}>
-            <div className="">
+            <div className="mb-20 lg:mt-0">
               <img src={data?.img} alt="img" width="100%" />
               <div className="flex justify-center items-center">
                 <div
                   style={{ marginTop: "-6rem", backgroundColor: "white" }}
-                  className="content w-4/5 leading-6 px-10 py-4 text-center border-2 border-gray-500 border-solid"
+                  className="content w-4/5 leading-6 lg:px-10 px-0 py-4 text-center border-2 border-gray-500 border-solid"
                 >
                   <p className="underline montserrat uppercase">{data?.head}</p>
                   <p className="text-2xl">{data?.title}</p>
@@ -54,13 +54,13 @@ function PopularPost() {
           </div>
         ))}
       </section>
-      <section className="grid grid-cols-2 gap-6 py-5">
-        <div className="">
+      <section className="lg:grid lg:grid-cols-2 lg:gap-6 py-5">
+        <div className="mb-20 lg:mt-0">
           <img src={image8} alt="img" width="100%" />
           <div className="flex justify-center items-center  ">
             <div
               style={{ marginTop: "-7.5rem", backgroundColor: "white" }}
-              className="content w-4/5  px-8 py-4 text-center border-2 border-gray-500 border-solid"
+              className="content w-4/5  lg:px-8 px-0 py-4 text-center border-2 border-gray-500 border-solid"
             >
               <p className="underline montserrat uppercase">Skin</p>
               <p className="text-3xl pt-1">
@@ -78,7 +78,7 @@ function PopularPost() {
           <div className="flex justify-center items-center  ">
             <div
               style={{ marginTop: "-7.5rem", backgroundColor: "white" }}
-              className="content w-4/5  px-8 py-4 text-center border-2 border-gray-500 border-solid"
+              className="content w-4/5  lg:px-8 px-0 py-4 text-center border-2 border-gray-500 border-solid"
             >
               <p className="underline montserrat uppercase">Tips</p>
               <p className="text-3xl pt-1">

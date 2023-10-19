@@ -7,7 +7,7 @@ import Frame4 from "../../../assets/Frame4.png";
 
 function InstaFeed() {
   return (
-    <div className="px-28">
+    <div className="lg:px-28 px-2">
       <HeadLine title="Instagram Feed" />
       <div className="grid grid-cols-4 gap-5">
         <img src={Frame1} alt="frame" width="100%" />

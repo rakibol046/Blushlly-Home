@@ -60,16 +60,16 @@ function RandomPost() {
     },
   ];
   return (
-    <div className="lg:px-28 sm:px-2">
+    <div className="lg:px-28">
       <HeadLine title="Random Post" />
       <br />
       {data.map((data, index) => (
         <div>
           <div className="overflow-hidden relative">
             <div className={`flex ${index % 2 ? "justify-end" : ""}`}>
-              <img src={data?.img} width="50%" />
+              <img src={data?.img} className="lg:w-1/2 w-full" />
             </div>
-            <div className="absolute inset-0 flex items-center justify-between">
+            <div className="absolute inset-0 flex items-center justify-between invisible lg:visible">
               <div
                 className={`${
                   index % 2 ? "random-content-reverse" : "random-content"
